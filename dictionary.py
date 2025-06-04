@@ -12,3 +12,7 @@ studentlist = {
 # print("Name = ", studentlist["Name"])
 
 print(f"Name = {studentlist["Name"]}")
+print(f"Id = {studentlist["id"]}")
+print(f"Address = {studentlist["Address"]}")
+
+studentlist.pop()
