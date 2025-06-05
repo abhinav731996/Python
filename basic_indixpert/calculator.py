@@ -13,7 +13,10 @@ print("*"*15)
 print("Result")
 print("*"*15)
 
-print("Sum:",first+second)
-print("Sub:",first-second)
-print("Mult:",first*second)
-print("Div:",first/second)
+result = {"Sum:":first+second, "Sub:":first-second,"Mult:":first*second, "Div:":first/second }
+print(result)
+
+# print("Sum:",first+second)
+# print("Sub:",first-second)
+# print("Mult:",first*second)
+# print("Div:",first/second)
