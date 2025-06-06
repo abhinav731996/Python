@@ -33,7 +33,7 @@ print("press b for sub")
 print("press c for mult")
 print("press d for divi")
 
-num = input("please select form menu: ")
+num = input("please select form menu: ").lower()
 
 if num == "a":
     print("Sum",num1+num2)
