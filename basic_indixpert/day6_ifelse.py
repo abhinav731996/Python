@@ -45,4 +45,3 @@ elif num =="d":
     print("div",num1/num2)
 else:
     print("Please select valid option!!")
-
