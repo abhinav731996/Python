@@ -29,4 +29,12 @@ data["total"] = total
 data["average"] = avg
 
 student_list.append(data)
-print(json.dumps(student_list, indent=4))
+# print(json.dumps(student_list, indent=4))
+ 
+print("*"*20,"result","*"*20)
+
+print("ID = ",id)
+print("Neme = ",name)
+print("Address = ",add)
+print("Total marks = ", total)
+print("Average = ", avg)
