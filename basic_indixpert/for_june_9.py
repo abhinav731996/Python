@@ -1,12 +1,12 @@
 # for n in range(1,11):
 #     print(n)
 
-# **************************************
+# ******************* table using for loop *********************
 # for n in range(1,11):
 #     print("2 *",n,"=", 2*n)
 
 
-# **************************************
+# ******************* table using for loop *********************
 # for n in range (1,51):
 #     for m in range (1,11):
 #         print(f"{n}*{m}={n*m}")
@@ -14,8 +14,26 @@
 #     print("*"*8)
 
 
+# ******************* table 1-50 using for loop *********************
 
-# **************************************list data
+# for a in range(1,51):
+#     for b in range(1,11):
+#         print(f"{a}*{b}={a*b}")
+#     print("*"*50)
+
+
+# ******************* find & match number using for loop *********************
+
+# listData = [10,20,30,40,50,60,70,80,90]
+
+# num = int(input("enter any number: "))
+
+# for item in listData:
+#     if num == item:
+#         print("Matched")
+    
+
+## ******************* find & match name using for loop *********************
 
 # listdata = [10,20,30,80,90,40,50]
 # listdata = ["abhinav", "kailash","denish","aditya"]

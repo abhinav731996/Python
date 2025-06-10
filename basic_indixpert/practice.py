@@ -16,4 +16,42 @@
 
 
 
-list = ["apple", "banana","mango" ]
+# list = ["apple", "banana","mango" ]
+# print(list[0])
+
+
+# ******************* user input table using for loop *********************
+
+# num = int(input("Enter any number: "))
+
+# for n in range(1,11):
+#     print(f"{num}*{n}={num*n}")
+
+
+# ******************* table 1-50 using for loop *********************
+
+# for a in range(1,51):
+#     for b in range(1,11):
+#         print(f"{a}*{b}={a*b}")
+#     print("*"*50)
+
+
+
+# ******************* find number using for loop *********************
+
+# listData = [10,20,30,40,50,60,70,80,90]
+
+# num = int(input("enter any number: "))
+
+# for item in listData:
+#     if num == item:
+#         print("Matched")
+    
+
+# ******************* dictionary data using for loop *********************
+
+dicdata = {"id":101, "name": "Abhinav"}
+
+for data in dicdata.items():
+    print(data)
+
