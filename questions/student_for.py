@@ -3,7 +3,7 @@ students = []
 for i in range(5):
     print(f"student{i+1}")
     studentdata ={}
-    studentdata["ID"] = int(input ("Enter ID: "))
+    studentdata["ID"] = 101+i
     studentdata["Name"] = input("Enter name: ")
     studentdata["Contact"] = int(input("Enter mobile number: "))
     studentdata["Qualification"] = [
@@ -18,4 +18,3 @@ print("*"*100)
 for studentdata in students:
     print(studentdata)
 
-    
