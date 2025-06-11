@@ -50,8 +50,31 @@
 
 # ******************* dictionary data using for loop *********************
 
-dicdata = {"id":101, "name": "Abhinav"}
+# dicdata = {"id":101, "name": "Abhinav"}
 
-for data in dicdata.items():
-    print(data)
+# for data in dicdata.items():
+#     print(data)
 
+
+# ******************* sum divi using user input using if-elif *********************
+
+num1 = int(input("enter 1st number: "))
+num2 = int(input("enter 2nd number: "))
+
+print("Press 'a' to sum")
+print("Press 'b' to sub")
+print("Press 'c' to div")
+print("Press 'd' to multi")
+
+choice = input("enter choice: ")
+
+if choice.lower() == "a":
+    print(num1+num2)
+elif choice.lower() == "b":
+    print(num1-num2)
+elif choice.lower() == "c":
+    print(num1/num2)
+elif choice.lower() == "d":
+    print(num1*num2)
+else:
+    print("Invalid option!!")

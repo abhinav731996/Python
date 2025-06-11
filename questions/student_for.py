@@ -8,7 +8,7 @@ for i in range(5):
     studentdata["Contact"] = int(input("Enter mobile number: "))
     studentdata["Qualification"] = [
         {"Name": input("Enter 1st Qualifiaction: "), "Passing": input("Enter passing year: ")},
-        {"Name": input("Enter 2nd Qualifiaction: "), "Passing": input("Enter passing year: ")}
+        {"Name": input("Enter 2nd Qualifiaction: "), "Passing": input("Enter passing year: ")},
     ]
 
     students.append(studentdata)
