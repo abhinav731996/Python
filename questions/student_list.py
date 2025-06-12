@@ -1,8 +1,8 @@
 Student = []
 
-while True:
-    total = int(input("How many students want to register (1-10): "))
-    if total > 0 and total <= 10:
+
+total = int(input("How many students want to register (1-10): "))
+if total > 0 and total <= 10:
         for i in range(total):  
             print(f"\nStudent {i+1}")
             Studentdata = {}
@@ -11,7 +11,7 @@ while True:
             Studentdata["Name"] = input("Enter Name: ")
             Studentdata["Address"] = input("Enter Address: ")
             Studentdata["Contact No"] = int(input("Enter Contact No: "))
-            
+
             Qualification = []
             print("Enter Qualification Details:")
             while True:
@@ -27,9 +27,8 @@ while True:
             Studentdata["Qualification"] = Qualification
             Student.append(Studentdata)
 
-        break  
-    else:
-        print("Please enter a number between 1 and 10.")
+else:
+    print("Please enter a number between 1 and 10.")
 
 
 print("*"*100)
