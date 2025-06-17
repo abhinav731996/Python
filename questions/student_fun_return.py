@@ -124,6 +124,25 @@ def getStudentRecord(student):
 
 
 def search(student):
+    
     pass
+
+    # while True:
+    #     print("Press 1 for search by ID: ")
+    #     print("Press 2 for search by Name: ")
+
+    #     choice = input("Enter any number: ")
+
+    #     if choice == "1" and choice.isdigit():
+    #         student_id = int(input("Enter student ID: "))
+    #         for key, value, in student.item():
+    #             if value == student_id:
+    #                 print(f"{key} : {value}")
+    #                 break
+    #             else:
+    #                 print("Invalid entry!! Try again")
+        
+        # elif choice == 2:
+
 
 menu()
