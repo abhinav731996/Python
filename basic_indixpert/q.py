@@ -18,3 +18,24 @@
 # x = z + y
 # print(x)
 
+
+# ******************************************
+
+
+number = [1,4,5,60,30]
+
+anynumber = int(input("enter any number:  "))
+
+num = 0
+flag = 1
+
+while(num<len(number)):
+    if number[num] == anynumber:
+        flag = 0
+        break
+    num +=1
+
+if flag == 0:
+    print("matched!!")
+else:
+    print("not matched")
