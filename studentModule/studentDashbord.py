@@ -7,9 +7,9 @@ def dasbord_management():
     data = []   
     
     while True:
-
-        option = int(input("enter your option"))
+        option = int(input("enter your option: "))
         if option == 1:
+            # studentRegistration()
             data = studentRegistration()
             # data = module1.studentRegistration()
         elif option == 2:
@@ -21,4 +21,9 @@ def dasbord_management():
             
         elif option == 4:
             break
+        else:
+            print("*"*50)
+            print("\tSelect from menu")
+            print("*"*50)
+            
 

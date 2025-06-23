@@ -1,5 +1,5 @@
 
-def studentRegistration(student):
+def studentRegistration():
     
     student = []
     studentData = {}
@@ -8,7 +8,7 @@ def studentRegistration(student):
 
         id = input("Enter ID: ")
         if len(id) == 3 and id.isdigit() and int(id) >100:
-            studentData["Id"] = id
+            studentData["id"] = id
             break
         else:
             print("Invalid entry!! Try again")
