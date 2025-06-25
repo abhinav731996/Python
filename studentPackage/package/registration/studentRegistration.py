@@ -9,7 +9,7 @@ def registration():
         id = input("Enter ID: ")
 
         if len(id) == 3 and id.isdigit() and int(id)>100:
-            studentData["id"] = id
+            studentData["id"] = int(id)
             break
         else:
             print("\nInvalid Entry!! try again\n")

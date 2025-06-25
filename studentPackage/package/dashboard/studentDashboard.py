@@ -17,12 +17,22 @@ def dashboard_management():
 
         if option == 1:
             data = registration()
+
         elif option == 2:
-            getStudentRecord(data)
+            if data:
+                getStudentRecord(data)
+            else:
+                print("No record found!!")
+
         elif option == 3:
-            search(data)
+            if data:
+                search(data)
+            else:
+                print("No record found!!")
+
         elif option == 4:
             break
+
         else:
             print("*"*50)
             print("\tSelect from menu")
