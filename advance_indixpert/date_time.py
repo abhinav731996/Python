@@ -6,7 +6,8 @@
 
 
 
-# *********************************************
+# ******************* formatting **************************
+
 # from datetime import datetime
 
 # data = datetime.now()
@@ -16,7 +17,8 @@
 # print(todaytime)
 
 
-# *********************************************
+# ******************* use of sleep **************************
+
 # import time
 
 # print("Searching........")
@@ -28,9 +30,31 @@
 # print("Welcom Abhinav!!")
 
 
-# *********************************************
+# ***************** current date and time ****************************
 
-from datetime import datetime
+# from datetime import datetime
 
-data = datetime.now()
+# data = datetime.now()
+# print(data)
+
+# ***************** current date only ****************************
+
+# from datetime import datetime
+
+# data = datetime.now()
+# print(data.date())
+
+# ******************* previous date **************************
+
+# import datetime
+
+# data = datetime.datetime.now() +datetime.timedelta(-7)
+# print(data)
+
+# ******************* next date by week **************************
+
+# import datetime
+
+# data = datetime.datetime.now() +datetime.timedelta(weeks=4)
+# print(data)
 

@@ -1,3 +1,4 @@
+import datetime
 
 def registration():
 
@@ -58,7 +59,7 @@ def registration():
             while True:
                 quali = input("Enter Qualification: ")
 
-                if quali.isalnum():
+                if quali:
                     subquali["Qualification"] = quali
                     break
                 else:
@@ -82,6 +83,8 @@ def registration():
             print("\nInvalid Entry!! try again\n")
 
         studentData["Qualification"] = qualification
+
+    studentData["createdDate"] = str(datetime.datetime.now().date())
 
     student.append(studentData)
 

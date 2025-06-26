@@ -7,7 +7,8 @@ def search(data):
         print("Press 2 for search by Name: ")
         print("Press 3 for search by Qualification name: ")
         print("Press 4 for search by Passing year: ")
-        print("Press 5 for exit: ")
+        print("Press 5 for search by Date: ")
+        print("Press 6 for exit: ")
      
 
         choice = input("Enter any number: ")
@@ -50,6 +51,14 @@ def search(data):
                            print(json.dumps(i,indent=4))
         
         elif int(choice) == 5:
+             dat = input("Enter date(yyyy-mm-dd): ")
+             for i in data:
+                if i["createdDate"]==dat:
+                    print("Results Available !")
+                    print(json.dumps(i,indent=4))
+
+
+        elif int(choice) == 6:
              break
        
 
