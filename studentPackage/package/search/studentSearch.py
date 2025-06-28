@@ -33,8 +33,6 @@ def search(data):
 
         elif int(choice) == 3:
             qname = input("Enter qualification name: ")
-            qname
-            
 
             for n in data:
                 for y in n["Qualification"]:
