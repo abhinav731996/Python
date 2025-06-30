@@ -1,7 +1,7 @@
-import sys
-import os
+# import sys
+# import os
 
-sys.path.append(os.getcwd())
+# sys.path.append(os.getcwd())
 
 from mainTask.three import three_module
 

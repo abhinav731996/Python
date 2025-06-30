@@ -17,6 +17,7 @@ def search(student):
             for key, value in student.items():
                 if value == student_id:
                     print(f"{key} : {value}")
+                    break
                     
                 else:
                     print("Invalid entry!! Try again")
@@ -26,6 +27,7 @@ def search(student):
             for key, value in student.items():
                 if value == name:
                     print(f"{key} : {value}")
+                    break
 
                 else:
                     print("Invalid entry!! Try again")
