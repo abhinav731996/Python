@@ -58,3 +58,10 @@
 # data = datetime.datetime.now() +datetime.timedelta(weeks=4)
 # print(data)
 
+# **************************************************************
+
+import time
+
+time.sleep(3)
+
+print("current_time")
