@@ -1,6 +1,10 @@
 import datetime
 import json
 
+def creatlogs(listData):
+    with open("studentregis.txt","a") as file:
+            for n in listData:
+                file.write(f"Name:{n["Name"]}, Date:{n["CreatedDate"]}\n")
 
 def studentRegistration(listData):
     
@@ -16,9 +20,7 @@ def studentRegistration(listData):
         with open("studentregis.json","w") as file:
             file.write(json.dumps(listData,indent=4))
 
-        with open("studentregis.txt","a") as file:
-            for n in listData:
-                file.write(f"Name:{n["Name"]}, Date:{n["CreatedDate"]}\n")
+        creatlogs(listData)
 
 def readExistingData():
     with open("studentregis.json", "r") as file:
