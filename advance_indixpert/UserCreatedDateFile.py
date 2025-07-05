@@ -13,7 +13,7 @@ def create_file():
         base = path +ucreated
 
         with open(base,"w") as file:
-            file.write("Thsi file is created")
+            file.write("This file is created")
 
 
 create_file()
