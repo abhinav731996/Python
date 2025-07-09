@@ -1,4 +1,5 @@
 import requests 
+# import json 
 
 data=requests.get("http://universities.hipolabs.com/search?country=India")
 
@@ -10,4 +11,11 @@ for d in data.json():
         listdata.append(d)
 
 
-print(listdata)
+for i in listdata:
+        print(f"state = Haryana")
+        print(f"name = {i["name"]}")
+        print(f"web_page = {i["web_pages"]}")
+        print("-" * 50)
+
+
+# print(json.dumps(listdata, indent=4))
