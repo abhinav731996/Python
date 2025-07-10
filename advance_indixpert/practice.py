@@ -128,13 +128,26 @@ import datetime
 
 # print(userName())
 
-first = 10
-sec = 20
+# first = 10
+# sec = 20
 
-def sum(a,b):
-    return a+b
+# def sum(a,b):
+#     return a+b
 
-print(sum(first, sec))
+# print(sum(first, sec))
 
 
 # ------------------------------------------------------------
+
+for i in range(1, n):
+    key = arr[i]
+    j = i - 1
+    
+     
+    while j >= 0 and arr[j] > key:
+        arr[j + 1] = arr[j]
+        j -= 1
+        
+    arr[j + 1] = key
+
+print("Sorted array:", arr)
