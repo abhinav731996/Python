@@ -9,7 +9,6 @@ class student:
         self.dict["id"] = uuid.uuid4().hex[:6]
         self.dict["name"] = input("enter your name: ")
 
-
     def display(self):
         print("*"*50)
         print("You entered:-")
@@ -22,8 +21,8 @@ class student:
         with open("/Users/abcd/Desktop/newFile/student.txt", "a") as file:
             file.write(json.dumps(self.dict, indent=4))
 
-
 data = student()
 data.display()
 data.writeFile()
+
 
