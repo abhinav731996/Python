@@ -1,29 +1,30 @@
-# class Person:
+class Person:
 
-#     def getName(self):
-#         print("I am person")
+    def getName(self):
+        print("I am person")
 
-#     def eat(self):
-#         print("Person can eat")
+    def eat(self):
+        print("Person can eat")
 
-# class Student(Person):
+class Student(Person):
 
-#     def getName(self):
-#         print("I am student")
+    def getName(self):
+        print("I am student")
+        super().getName()
 
 
-# class Teacher(Person):
+class Teacher(Person):
 
-#     def getName(self):
-#         print("I am a teacher")
+    def getName(self):
+        print("I am a teacher")
 
-# ob = Student()
+ob = Student()
 
-# ob.getName()
-# ob.eat()
+ob.getName()
+ob.eat()
 
-# ob1 = Person()
-# ob1.getName()
+ob1 = Person()
+ob1.getName()
 
 
 
@@ -52,22 +53,22 @@
 
 
 
-class Student:
+# class Student:
 
-    def name(self):
-        print("First name: ")
+#     def name(self):
+#         print("First name: ")
 
-    def name(self, age=20):
-        print("Second name: ", age)
+#     def name(self, age=20):
+#         print("Second name: ", age)
 
 
-class Student2:
+# class Student2:
 
-    def name(self):
-        print("This is child ")
+#     def name(self):
+#         print("This is child ")
 
-# ob = Student()
-# ob.name(10)
+# # ob = Student()
+# # ob.name(10)
 
-ob1 = Student2()
-ob1.name()
+# ob1 = Student2()
+# ob1.name()
