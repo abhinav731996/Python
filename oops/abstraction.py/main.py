@@ -68,6 +68,8 @@
 
 # ob = fresher()
 # ob.name()
+# ob.search()
+# ob.registration()
 
 # *********************************************
 
