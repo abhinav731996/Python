@@ -74,47 +74,93 @@
 
 # *************  file handling ***************
 
-import json 
+# import json 
 
-path = r"/Users/abcd/Desktop/practice/sample.txt"
+# path = r"/Users/abcd/Desktop/practice/sample.txt"
 
-def writefile():
-    listData = []
-    dicdata = {}
-    dicdata["id"] = int(input("enter id: "))
-    dicdata["name"] = input("enter name: ")
+# def writefile():
+#     listData = []
+#     dicdata = {}
+#     dicdata["id"] = int(input("enter id: "))
+#     dicdata["name"] = input("enter name: ")
 
-    listData.append(dicdata)
+#     listData.append(dicdata)
 
-    with open(path,"a") as file:
-        file.write(json.dumps(listData, indent=4))
+#     with open(path,"a") as file:
+#         file.write(json.dumps(listData, indent=4))
 
-    print("success!")
+#     print("success!")
     
-    return
+#     return
 
-def readfile(data):
-    with open(path,"r") as file:
-        content = file.read(data)
-        print(content)
+# def readfile(data):
+#     with open(path,"r") as file:
+#         content = file.read(data)
+#         print(content)
 
 
-while True:
-    print("1 for write")
-    print("2 for read")
-    print("3 for exit")
+# while True:
+#     print("1 for write")
+#     print("2 for read")
+#     print("3 for exit")
 
-    option = int(input("select any option: "))
+#     option = int(input("select any option: "))
 
-    if option == 1:
-        data = writefile()
+#     if option == 1:
+#         data = writefile()
         
-    elif option == 2:
-        readfile(data)
-    elif option == 3:
-        break
-    else:
-        print("please select from menu!!")
+#     elif option == 2:
+#         readfile(data)
+#     elif option == 3:
+#         break
+#     else:
+#         print("please select from menu!!")
 
 
+# ***************** requests library *******************
+
+# import requests
+# import json
+
+# url = "https://api.sampleapis.com/coffee/hot"
+
+# response = requests.get(url)
+
+# lisdata = []
+
+# for i in response.json():
+#     if i["title"] and i["title"].lower() == "mocha":
+#         lisdata.append(i)
+
+# print(json.dumps(lisdata, indent=4))
+
+# if lisdata:
+#     for a in lisdata():
+#         print(f"{a["title"]}-{a["web_page"][0]}")
+
+
+
+
+
+import requests
+import json
+import bs4
+
+
+url = "https://api.sampleapis.com/coffee/hot"
+
+response = requests.get(url)
+
+# soup = bs4.BeautifulSoup(response.text,"html parse")
+
+# print(soup.prettify())
+
+lisdata = []
+
+for i in response.json():
+    for j in i.items():
+        if "Espresso" and "Expresso" not in i["ingredients"][0]:
     
+            lisdata.append(j)
+
+print(json.dumps(lisdata, indent=4))

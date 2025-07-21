@@ -13,22 +13,22 @@ for d in data.json():
 print(listdata)
 
 # ********** gpt
-# import requests
+import requests
 
-# # Get university data for India
-# response = requests.get("http://universities.hipolabs.com/search?country=India")
+# Get university data for India
+response = requests.get("http://universities.hipolabs.com/search?country=India")
 
-# listdata = []
+listdata = []
 
-# # Filter universities where state-province is Haryana
-# for university in response.json():
-#     if university["state-province"] and university["state-province"].lower() == "haryana":
-#         listdata.append(university)
+# Filter universities where state-province is Haryana
+for university in response.json():
+    if university["state-province"] and university["state-province"].lower() == "haryana":
+        listdata.append(university)
 
-# # Print the results
-# if listdata:
-#     for uni in listdata:
-#         print(f"{uni['name']} - {uni['web_pages'][0]}")
-# else:
-#     print("No universities found in Haryana.")
+# Print the results
+if listdata:
+    for uni in listdata:
+        print(f"{uni['name']} - {uni['web_pages'][0]}")
+else:
+    print("No universities found in Haryana.")
 
