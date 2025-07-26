@@ -43,7 +43,7 @@ while starttime < tofindtime:
     time.sleep(0.5)
 
 # File path (update as needed)
-csv_file_path = r"C:\python\rndproject\npi_data_with_social_links.csv"
+csv_file_path = r"/Users/abcd/Desktop/Indixpert/Python/links.csv"
 
 # Write to CSV
 with open(csv_file_path, mode='w', newline='', encoding='utf-8') as csvfile:
