@@ -59,10 +59,35 @@
 
 # **************************************dictionary data
 
-dicdata = [{"id":101, "name":"Abhinav", "Address":"Rohtak"},
-           {"id":102, "name":"Abhinav", "Address":"Rohtak"}
-           ]
-for item in dicdata:
-    for keys,values in item.items():
-        print(keys,"=", values)
+# dicdata = [{"id":101, "name":"Abhinav", "Address":"Rohtak"},
+#            {"id":102, "name":"Abhinav", "Address":"Rohtak"}
+#            ]
+# for item in dicdata:
+#     for keys,values in item.items():
+#         print(keys,"=", values)
     
+
+
+
+def display_students(studentdata):
+    if not studentdata:
+        print("No student data to display.")
+        return
+
+    print("=" * 100)
+    print(" " * 30 + "All Registered Students")
+    print("=" * 100)
+    
+    count = 1  
+
+    for student in studentdata:
+        print(f"Student {count}")
+        print("-" * 50)
+        for key, value in student.items():
+            if key == "qualification":
+                print("Qualifications:")
+                for i in value:
+                    print(f"  - {i['name']} ({i['passing year']})")
+            else:
+                print(f"{key}: {value}")
+        count += 1
