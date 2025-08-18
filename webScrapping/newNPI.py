@@ -97,10 +97,10 @@ def display_and_save(results, filename="npi_results.csv"):
 
     df = pd.DataFrame(data_list)
     df.to_csv(filename, index=False)
-    print(f"\n✅ Results saved to {filename}")
+    print(f"\n Results saved to {filename}")
     print(df)
 
-# 🔍 Example usage:
+#  Example usage:
 if __name__ == "__main__":
     print("=== NPI Search Tool ===")
     fname = input("Enter First Name (or press Enter to skip): ").strip()
@@ -116,5 +116,5 @@ if __name__ == "__main__":
     if results:
         display_and_save(results)
     else:
-        print("❌ No results found.")
+        print(" No results found.")
 
